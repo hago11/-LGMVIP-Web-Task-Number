@@ -1,0 +1,87 @@
+html,
+body{
+   margin: 0;
+   font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: url("images/todo.jpeg") no-repeat;
+    background-size: cover;
+}
+
+#wrapper h2{
+    display:flex;
+    justify-content: center;
+    
+}
+
+h2{
+    color:#ffeba7;
+    letter-spacing: 1px;
+}
+input{
+    border-radius: 5px;
+    border: 2px solid black ;
+    margin-top:30px;
+    height:2.5em;
+    width:250px;
+    padding-left:10px;
+}
+
+input:active{
+    border:none;
+    border-radius: 10px;
+}
+#wrapper {
+    height: 500px;
+    width: 400px;
+    margin: 200px auto;
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    border-radius: 25px;
+    padding: 30px;
+    opacity: 0.8;
+    text-align: center; 
+    
+}
+
+
+button{
+    margin-top:20px;
+    background-color:rgb(133, 235, 253);    
+    border-radius: 8px;
+    height: 44px;
+    font-weight: 600;
+    padding: 0 30px;
+    letter-spacing: 1px;
+    border: none;
+    color:blue;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    display:block;
+   margin-left:auto; 
+   margin-right:auto; 
+    
+}
+
+button:hover{
+    cursor:pointer;
+    color: red;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+#todoList{
+    color:white;
+    font-size:28px;  
+    margin-top:10px; 
+}
+
+#todoList p{
+  margin:10px 0px;
+}
+
+#todoList p:hover{
+  cursor: pointer;
+  background-color: red;
+}
