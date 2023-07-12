@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="css/stylee.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <style>
+    body {
+      background: url("https://storage.googleapis.com/pai-images/859f63cdd0c042149c87fff463b7e891.jpeg") no-repeat center fixed;
+      background-size: cover;
+      
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <nav>Student Registration Form</nav>
+    <div class="input-form">
+      <h1>Register Here</h1>
+      <form action="#" id="input-form">
+        <div class="input-group">
+          <input type="text" class="input-field" id="name" required autofocus>
+          <label for="name">Name</label>
+        </div>
+        <div class="input-group">
+          <input type="email" class="input-field" id="email" required>
+          <label for="email">Email</label>
+        </div>
+        <div class="input-group">
+          <input type="number" class="input-field" id="age" required>
+          <label for="age">Age</label>
+        </div>
+        <div class="input-group">
+          <input type="text" class="input-field" id="addr" required>
+          <label for="addr">Address</label>
+        </div>
+        <div class="input-select">
+          <label class="Label">Gender</label><br>
+          <input type="radio" id="male" value="Male" name="gender">Male
+          <input type="radio" id="female" value="Female" name="gender">Female
+        </div>
+        <div class="input-select">
+          <label class="Label">Skills</label><br>
+          <input type="checkbox" name="skills" id="communication" value="Communication">Communication
+          <input type="checkbox" name="skills" id="leadership" value="Leadership">Leadership
+          <input type="checkbox" name="skills" id="programming" value="Programming">Programming
+          <input type="checkbox" name="skills" id="finance" value="Finance">Finance
+          <input type="checkbox" name="skills" id="consultancy" value="Consultancy">Consultancy
+          <input type="checkbox" name="skills" id="marketing" value="Marketing">Marketing
+        </div>
+        <div class="buttons">
+          <button type="button" id="add-btn"><i class="fas fa-user-plus"></i>REGISTER</button>
+          <button type="button" id="delete-btn"><i class="fas fa-trash-alt"></i>DELETE</button>
+        </div>
+      </form>
+    </div>
+    <div class="line"></div>
+    <div class="table">
+      <h1 class="reg">Registered Students</h1>
+      <div class="scroll">
+        <table id="display">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Age</th>
+              <th>Address</th>
+              <th>Gender</th>
+              <th>Skills</th>
+              <th>Profile</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="js/stu.js"></script>
+</body>
+
+</html>
